@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YZFActionEmptyView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_empy_view" translatesAutoresizingMaskIntoConstraints="NO" id="rzP-qK-rv9">
+                    <rect key="frame" x="163" y="288.5" width="50" height="50"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没数据哦,点击刷新试试" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiV-ar-qTE">
+                    <rect key="frame" x="103" y="346.5" width="168" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-hY-Mhi">
+                    <rect key="frame" x="127.5" y="374" width="120" height="40"/>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.2666666667" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="dcS-o9-hh3"/>
+                        <constraint firstAttribute="height" constant="40" id="rB0-FV-14Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="刷新">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="touchActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="wRq-46-kYG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="z1Z-hY-Mhi" firstAttribute="top" secondItem="GiV-ar-qTE" secondAttribute="bottom" constant="8" id="5XE-vt-tUu"/>
+                <constraint firstItem="GiV-ar-qTE" firstAttribute="top" secondItem="rzP-qK-rv9" secondAttribute="bottom" constant="8" id="BJV-Dx-U2r"/>
+                <constraint firstItem="rzP-qK-rv9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FdM-8A-0Dv"/>
+                <constraint firstItem="GiV-ar-qTE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I4g-zq-j3v"/>
+                <constraint firstItem="rzP-qK-rv9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="PqX-Dm-dKW"/>
+                <constraint firstItem="z1Z-hY-Mhi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qQr-cX-1xj"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder_empy_view" width="50" height="50"/>
+    </resources>
+</document>

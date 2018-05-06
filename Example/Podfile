@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PSEmptyView_Example' do
+  pod 'PSEmptyView', :path => '../'
+
+  target 'PSEmptyView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

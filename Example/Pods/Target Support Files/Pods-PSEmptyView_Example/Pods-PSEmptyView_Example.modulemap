@@ -1,0 +1,6 @@
+framework module Pods_PSEmptyView_Example {
+  umbrella header "Pods-PSEmptyView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - PSEmptyView (1.0.0)
+
+DEPENDENCIES:
+  - PSEmptyView (from `../`)
+
+EXTERNAL SOURCES:
+  PSEmptyView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PSEmptyView: 6f71473a619ae388c485993c97168a8f5e441bad
+
+PODFILE CHECKSUM: 75bec8e14cbac54d68ddc3b114c0062e60fe5a3f
+
+COCOAPODS: 1.5.0
